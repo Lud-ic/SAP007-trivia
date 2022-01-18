@@ -1,13 +1,103 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trivia</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <main>
+        <h1>Trivia: Literatura Brasileira</h1>
+
+        <form name="trivia" id="formContainer">
+          <div class="questionContainer">
+            <p>
+              <strong
+                >1. Quem é o autor de "Memórias Póstumas de Brás Cubas"?</strong
+              >
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="question1"
+                value="Graciliano Ramos"
+                class="inputContainer"
+              />A. Graciliano Ramos
+            </p>
+            <p>
+              <input type="radio" name="question1" value="Machado de Assis" />B.
+              Machado de Assis
+            </p>
+            <p>
+              <input type="radio" name="question1" value="José de Alencar" />C.
+              José de Alencar
+            </p>
+
+            <p id="answerOne" />
+          </div>
+
+          <div class="questionContainer">
+            <p>
+              <strong>2. A cachorra "Baleia" é personagem do romance:</strong>
+            </p>
+            <p>
+              <input type="radio" name="question2" value="O Quinze" />A. O
+              Quinze, de Raquel de Queiroz
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="question2"
+                value="Menino de Engenho"
+              />B. Menino de Engenho, de José Lins do Rego
+            </p>
+            <p>
+              <input type="radio" name="question2" value="Vidas Secas" />C.
+              Vidas Secas, de Graciliano Ramos
+            </p>
+
+            <p id="answerTwo" />
+          </div>
+
+          <div class="questionContainer">
+            <p>
+              <strong
+                >3. A obra "Capitães da Areia", que retrata a vida dos meninos
+                de rua de Salvador na década de 30, foi escrita por:</strong
+              >
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="question3"
+                value="João Guimarães Rosa"
+              />A. João Guimarães Rosa
+            </p>
+            <p>
+              <input type="radio" name="question3" value="Machado de Assis" />B.
+              Machado de Assis
+            </p>
+            <p>
+              <input type="radio" name="question3" value="Jorge Amado" />C.
+              Jorge Amado
+            </p>
+
+            <p id="answerThree" />
+          </div>
+          <div class="buttonContainer">
+            <input
+              type="button"
+              class="button"
+              value="Verificar Respostas"
+              onclick="check()"
+            />
+          </div>
+        </form>
+      </main>
+      <footer>Criado por Lidianne Barbosa e Ludmila Magalhães</footer>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
